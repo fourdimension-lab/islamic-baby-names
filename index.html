@@ -3,29 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Islamic Baby Names — Authentic Meanings & Arabic Script | names.sakib.bond</title>
-  <meta name="description" content="Discover beautiful Islamic baby names for boys and girls with authentic Arabic script, English meanings, and Quranic references on names.sakib.bond." />
-  <meta name="keywords" content="Islamic baby names, Muslim names, Arabic names for boys, Arabic names for girls, Quranic names, names.sakib.bond" />
+  <title>Islamic Names — 99 Names of Allah (Asma-ul-Husna) & Muslim Baby Names | names.sakib.bond</title>
+  <meta name="description" content="Discover the 99 Names of Allah (Asma-ul-Husna) with Arabic script, audio, English & Bengali meanings, alongside a curated Islamic baby names dictionary for boys and girls on names.sakib.bond." />
+  <meta name="keywords" content="99 names of Allah, Asmaul Husna, Islamic baby names, Muslim boy names, Muslim girl names, Arabic names, Bengali meaning, names.sakib.bond" />
   <meta name="author" content="names.sakib.bond" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#0d1b2a" />
   <link rel="canonical" href="https://names.sakib.bond/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Islamic Baby Names — names.sakib.bond" />
-  <meta property="og:description" content="Find blessed Muslim names with authentic Arabic spelling and noble meanings." />
+  <meta property="og:title" content="Islamic Names — 99 Names of Allah & Muslim Baby Names" />
+  <meta property="og:description" content="99 Names of Allah with audio, English & Bengali meanings, plus authentic Islamic baby names for boys and girls." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://names.sakib.bond/" />
-  <meta property="og:site_name" content="Islamic Baby Names" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Islamic Baby Names — names.sakib.bond" />
+  <meta property="og:site_name" content="Islamic Names & Asma-ul-Husna" />
 
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Amiri:wght@400;700&family=Noto+Serif+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <!-- Schema.org JSON-LD -->
@@ -33,9 +29,9 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Islamic Baby Names",
+    "name": "Islamic Names & Asma-ul-Husna",
     "url": "https://names.sakib.bond",
-    "description": "Comprehensive Islamic baby names dictionary with Arabic typography, meanings, and origins."
+    "description": "Comprehensive Islamic names dictionary featuring 99 Names of Allah with Arabic calligraphy and audio, and curated Muslim baby names."
   }
   </script>
 
@@ -51,6 +47,7 @@
       --text-main: #f8fafc;
       --text-muted: #cbd5e1;
       --text-arabic: #fde68a;
+      --text-bengali: #86efac;
       --border-color: rgba(224, 168, 153, 0.22);
       --radius-sm: 8px;
       --radius-md: 14px;
@@ -67,8 +64,9 @@
       --gold-primary: #b45309;
       --gold-bright: #92400e;
       --text-main: #1f2937;
-      --text-muted: #6b7280;
+      --text-muted: #4b5563;
       --text-arabic: #831843;
+      --text-bengali: #15803d;
       --border-color: rgba(183, 110, 121, 0.25);
       --shadow-card: 0 10px 25px rgba(0, 0, 0, 0.08);
     }
@@ -90,6 +88,48 @@
       background-size: 26px 26px; pointer-events: none; z-index: 0;
     }
 
+    /* Header & Nav */
+    header {
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky; top: 0; z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+    .navbar {
+      max-width: 1300px; margin: 0 auto; padding: 14px 24px;
+      display: flex; justify-content: space-between; align-items: center; gap: 16px;
+    }
+    .brand {
+      display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text-main);
+    }
+    .brand i {
+      font-size: 26px; color: var(--gold-bright);
+      filter: drop-shadow(0 0 10px rgba(243, 207, 122, 0.4));
+    }
+    .brand div {
+      font-family: 'Cinzel', serif; font-size: 20px; font-weight: 700;
+      letter-spacing: 0.5px; line-height: 1.1;
+    }
+    .brand span {
+      display: block; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 11px;
+      color: var(--rose-gold); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;
+    }
+
+    .nav-actions {
+      display: flex; align-items: center; gap: 12px;
+    }
+    .fav-count-badge {
+      display: flex; align-items: center; gap: 6px; background: var(--bg-card);
+      border: 1px solid var(--border-color); border-radius: 20px; padding: 6px 14px;
+      font-size: 13px; font-weight: 700; color: var(--rose-gold); cursor: pointer;
+    }
+    .theme-btn {
+      background: var(--bg-card); border: 1px solid var(--border-color);
+      color: var(--gold-bright); width: 40px; height: 40px; border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center; cursor: pointer; transition: 0.2s;
+    }
+    .theme-btn:hover { background: var(--bg-card-hover); border-color: var(--gold-bright); }
+
     /* Halalspark Ad */
     .halalspark-ad-container {
       width: 100%; display: flex; justify-content: center; margin: 18px 0; position: relative; z-index: 10;
@@ -98,143 +138,183 @@
       border: 1px dashed var(--rose-gold); border-radius: var(--radius-sm);
       display: flex; flex-direction: column; align-items: center; justify-content: center;
       background: linear-gradient(135deg, rgba(20, 40, 63, 0.95), rgba(13, 27, 42, 0.95));
-      color: var(--gold-bright); font-size: 13px; font-weight: 600; letter-spacing: 0.5px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3); padding: 10px; text-align: center;
+      color: var(--gold-bright); padding: 12px 20px; text-align: center;
+      font-size: 13px; font-weight: 600; box-shadow: var(--shadow-card);
     }
     .halalspark-ad .ad-badge {
-      font-size: 10px; text-transform: uppercase; padding: 2px 8px;
-      background: rgba(224, 168, 153, 0.15); border-radius: 4px; margin-bottom: 4px; color: var(--text-muted);
+      font-size: 10px; background: rgba(224, 168, 153, 0.2);
+      border: 1px solid var(--rose-gold); color: var(--gold-bright);
+      padding: 2px 8px; border-radius: 4px; text-transform: uppercase;
+      letter-spacing: 1px; margin-bottom: 6px;
     }
-
-    /* Header */
-    header {
-      background: var(--bg-surface); border-bottom: 1px solid var(--border-color);
-      position: sticky; top: 0; z-index: 100; backdrop-filter: blur(12px);
-    }
-    .navbar {
-      max-width: 1400px; margin: 0 auto; padding: 14px 24px;
-      display: flex; align-items: center; justify-content: space-between; gap: 16px;
-    }
-    .brand {
-      display: flex; align-items: center; gap: 12px; text-decoration: none;
-      color: var(--rose-gold); font-family: 'Cinzel', serif; font-size: 20px; font-weight: 700;
-    }
-    .brand i { font-size: 24px; color: var(--gold-primary); }
-    .brand span { font-size: 12px; display: block; color: var(--text-muted); font-family: 'Plus Jakarta Sans', sans-serif; }
-
-    .nav-actions { display: flex; align-items: center; gap: 12px; }
-    .theme-btn {
-      background: var(--bg-card); border: 1px solid var(--border-color);
-      color: var(--rose-gold); width: 38px; height: 38px; border-radius: 50%;
-      display: inline-flex; align-items: center; justify-content: center; cursor: pointer; transition: 0.2s;
-    }
-    .theme-btn:hover { background: var(--bg-card-hover); border-color: var(--rose-gold); }
 
     /* Hero */
     .hero {
-      background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-base) 100%);
-      border-bottom: 1px solid var(--border-color);
-      padding: 44px 24px 34px; text-align: center; position: relative; z-index: 5;
+      text-align: center; padding: 32px 20px 20px; position: relative; z-index: 5; max-width: 900px; margin: 0 auto;
+    }
+    .hero-arabic {
+      font-family: 'Amiri', serif; font-size: 32px; color: var(--gold-bright);
+      margin-bottom: 8px; direction: rtl;
     }
     .hero h1 {
-      font-family: 'Cinzel', serif; font-size: clamp(24px, 4vw, 38px);
-      color: var(--rose-gold); margin-bottom: 8px;
+      font-family: 'Cinzel', serif; font-size: 34px; color: var(--text-main);
+      margin-bottom: 10px; letter-spacing: 0.5px;
     }
     .hero p {
-      font-size: 15px; color: var(--text-muted); max-width: 680px; margin: 0 auto 20px;
+      color: var(--text-muted); font-size: 15px; max-width: 720px; margin: 0 auto;
     }
 
-    /* Name of Day Box */
-    .notd-box {
-      max-width: 600px; margin: 0 auto; background: var(--bg-card);
-      border: 1px solid var(--rose-gold); border-radius: var(--radius-md);
-      padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    /* Primary Navigation Switcher (Allah's Names vs Baby Names) */
+    .view-switcher-bar {
+      max-width: 600px; margin: 0 auto 28px; padding: 0 20px; position: relative; z-index: 5;
     }
-    .notd-left { text-align: left; }
-    .notd-label { font-size: 11px; text-transform: uppercase; color: var(--rose-gold); font-weight: 700; }
-    .notd-title { font-size: 20px; font-weight: 700; color: var(--gold-bright); }
-    .notd-ar { font-family: 'Amiri', serif; font-size: 28px; color: var(--text-arabic); }
+    .switch-tabs {
+      display: flex; background: var(--bg-surface); border: 2px solid var(--border-color);
+      border-radius: 30px; padding: 4px; gap: 4px;
+    }
+    .switch-tab {
+      flex: 1; padding: 12px 20px; border-radius: 24px; border: none; background: transparent;
+      color: var(--text-muted); font-size: 15px; font-weight: 700; cursor: pointer; transition: 0.25s;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .switch-tab.active {
+      background: linear-gradient(135deg, var(--gold-primary), var(--gold-bright));
+      color: #000; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.35);
+    }
 
-    /* Controls */
-    .controls-wrap {
-      max-width: 1400px; margin: 24px auto 0; padding: 0 24px;
-      display: flex; flex-direction: column; gap: 16px; position: relative; z-index: 5;
+    /* Controls Bar */
+    .main-section {
+      max-width: 1300px; margin: 0 auto 40px; padding: 0 24px; position: relative; z-index: 5;
     }
-    .search-row {
-      display: flex; gap: 12px; flex-wrap: wrap; justify-content: space-between; align-items: center;
+    .controls-row {
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;
+      gap: 16px; margin-bottom: 24px;
     }
-    .search-input {
-      flex: 1; min-width: 260px; max-width: 480px; background: var(--bg-surface);
-      border: 1px solid var(--border-color); border-radius: 30px; padding: 10px 20px;
-      color: var(--text-main); font-size: 14px; outline: none;
+    .search-wrap {
+      position: relative; display: flex; align-items: center; min-width: 300px; flex: 1; max-width: 450px;
     }
-    .search-input:focus { border-color: var(--rose-gold); }
+    .search-wrap i {
+      position: absolute; left: 16px; color: var(--gold-primary); font-size: 15px;
+    }
+    .search-wrap input {
+      width: 100%; background: var(--bg-surface); border: 1px solid var(--border-color);
+      border-radius: 25px; padding: 12px 16px 12px 44px; color: var(--text-main);
+      font-size: 14px; outline: none; transition: 0.2s;
+    }
+    .search-wrap input:focus { border-color: var(--gold-bright); box-shadow: 0 0 10px rgba(243, 207, 122, 0.2); }
 
-    .filter-tabs { display: flex; gap: 8px; flex-wrap: wrap; }
-    .tab-btn {
+    .filter-pills {
+      display: flex; gap: 8px; flex-wrap: wrap;
+    }
+    .filter-btn {
       background: var(--bg-surface); border: 1px solid var(--border-color);
-      color: var(--text-muted); padding: 8px 16px; border-radius: 20px; font-size: 13px;
-      cursor: pointer; transition: 0.2s;
+      color: var(--text-muted); padding: 8px 16px; border-radius: 20px;
+      font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s;
     }
-    .tab-btn:hover, .tab-btn.active {
-      background: var(--rose-gold); color: #000; border-color: var(--rose-gold); font-weight: 700;
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--gold-primary); color: #000; border-color: var(--gold-bright); font-weight: 700;
     }
 
-    /* A-Z Bar */
-    .az-bar {
-      display: flex; gap: 6px; flex-wrap: wrap; justify-content: center;
-      background: var(--bg-surface); padding: 10px 14px; border-radius: var(--radius-md);
-      border: 1px solid var(--border-color);
+    /* Alphabet bar for baby names */
+    .alpha-bar {
+      display: flex; gap: 6px; overflow-x: auto; padding: 6px 0 16px; margin-bottom: 20px;
     }
-    .az-btn {
-      background: transparent; border: none; color: var(--text-muted);
-      font-weight: 700; font-size: 13px; padding: 4px 8px; border-radius: 4px; cursor: pointer;
+    .alpha-btn {
+      min-width: 34px; height: 34px; border-radius: 50%; background: var(--bg-card);
+      border: 1px solid var(--border-color); color: var(--text-muted); font-size: 12px;
+      font-weight: 700; display: flex; align-items: center; justify-content: center;
+      cursor: pointer; transition: 0.2s; flex-shrink: 0;
     }
-    .az-btn:hover, .az-btn.active { color: var(--rose-gold); background: var(--bg-card); }
+    .alpha-btn:hover, .alpha-btn.active {
+      background: var(--gold-primary); color: #000; border-color: var(--gold-bright);
+    }
 
-    /* Names Grid */
+    /* 99 Names Grid */
     .names-grid {
-      max-width: 1400px; margin: 24px auto 40px; padding: 0 24px;
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px;
-      position: relative; z-index: 5;
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); gap: 20px;
     }
-    .name-card {
+
+    /* Asmaul Husna Card */
+    .allah-card {
       background: var(--bg-surface); border: 1px solid var(--border-color);
       border-radius: var(--radius-lg); padding: 22px; box-shadow: var(--shadow-card);
-      display: flex; flex-direction: column; justify-content: space-between;
-      transition: all 0.25s ease;
+      position: relative; transition: 0.25s; display: flex; flex-direction: column; justify-content: space-between;
     }
-    .name-card:hover { transform: translateY(-4px); border-color: var(--rose-gold); }
-    .name-card-top {
-      display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;
+    .allah-card:hover {
+      transform: translateY(-4px); border-color: var(--gold-bright);
+      box-shadow: 0 12px 35px rgba(212, 175, 55, 0.15);
     }
-    .name-badge {
-      font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 12px;
-      text-transform: uppercase;
+    .card-top {
+      display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;
     }
-    .badge-boy { background: rgba(59, 130, 246, 0.15); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); }
-    .badge-girl { background: rgba(236, 72, 153, 0.15); color: #f472b6; border: 1px solid rgba(236, 72, 153, 0.3); }
-    .badge-unisex { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .name-number {
+      font-family: 'Cinzel', serif; font-size: 12px; font-weight: 700; color: var(--gold-bright);
+      background: rgba(212, 175, 55, 0.15); border: 1px solid var(--gold-primary);
+      width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    }
+    .card-actions {
+      display: flex; gap: 8px; align-items: center;
+    }
+    .audio-btn, .fav-btn {
+      background: var(--bg-card); border: 1px solid var(--border-color);
+      color: var(--text-muted); width: 32px; height: 32px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; cursor: pointer; transition: 0.2s;
+    }
+    .audio-btn:hover { color: var(--gold-bright); border-color: var(--gold-bright); }
+    .fav-btn.favorited { color: #f43f5e; border-color: #f43f5e; }
 
-    .fav-btn {
-      background: transparent; border: none; color: var(--text-muted);
-      font-size: 16px; cursor: pointer; transition: 0.2s;
+    .allah-arabic {
+      font-family: 'Amiri', serif; font-size: 38px; color: var(--text-arabic);
+      text-align: center; margin: 6px 0; direction: rtl; line-height: 1.2;
     }
-    .fav-btn:hover, .fav-btn.favorited { color: #f43f5e; }
+    .allah-translit {
+      text-align: center; font-family: 'Cinzel', serif; font-size: 17px; font-weight: 700;
+      color: var(--gold-bright); margin-bottom: 6px;
+    }
+    .allah-bengali {
+      font-family: 'Noto Serif Bengali', serif; text-align: center; color: var(--text-bengali);
+      font-size: 15px; font-weight: 600; margin-bottom: 8px;
+    }
+    .allah-meaning-en {
+      text-align: center; font-size: 13px; color: var(--text-muted); margin-bottom: 12px; line-height: 1.5;
+    }
+    .allah-meta {
+      border-top: 1px solid var(--border-color); padding-top: 10px; font-size: 11px;
+      color: var(--text-muted); display: flex; justify-content: space-between; align-items: center;
+    }
 
-    .name-heading {
-      font-size: 22px; font-weight: 700; color: var(--rose-gold); margin-bottom: 2px;
+    /* Baby Name Card */
+    .baby-card {
+      background: var(--bg-surface); border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg); padding: 22px; box-shadow: var(--shadow-card);
+      transition: 0.25s; display: flex; flex-direction: column; justify-content: space-between;
     }
-    .name-arabic {
-      font-family: 'Amiri', serif; font-size: 26px; color: var(--text-arabic);
-      direction: rtl; text-align: right; margin-bottom: 8px;
+    .baby-card:hover { transform: translateY(-4px); border-color: var(--rose-gold); }
+    .gender-badge {
+      font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 12px;
     }
-    .name-meaning {
-      font-size: 14px; color: var(--text-main); margin-bottom: 12px; line-height: 1.6;
+    .badge-boy { background: rgba(59, 130, 246, 0.2); color: #93c5fd; border: 1px solid #3b82f6; }
+    .badge-girl { background: rgba(244, 63, 94, 0.2); color: #fda4af; border: 1px solid #f43f5e; }
+    .badge-unisex { background: rgba(168, 85, 247, 0.2); color: #d8b4fe; border: 1px solid #a855f7; }
+
+    .baby-arabic {
+      font-family: 'Amiri', serif; font-size: 32px; color: var(--text-arabic);
+      text-align: right; direction: rtl; margin-bottom: 4px;
     }
-    .name-meta-row {
-      display: flex; justify-content: space-between; border-top: 1px solid var(--border-color);
-      padding-top: 10px; font-size: 12px; color: var(--text-muted);
+    .baby-name {
+      font-family: 'Cinzel', serif; font-size: 20px; font-weight: 700; color: var(--gold-bright);
+      margin-bottom: 4px;
+    }
+    .baby-bengali {
+      font-family: 'Noto Serif Bengali', serif; color: var(--text-bengali);
+      font-size: 14px; font-weight: 600; margin-bottom: 8px;
+    }
+    .baby-meaning {
+      font-size: 13px; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;
+    }
+    .baby-meta {
+      border-top: 1px solid var(--border-color); padding-top: 10px; font-size: 12px;
+      color: var(--text-muted); display: flex; justify-content: space-between;
     }
 
     /* Footer */
@@ -246,27 +326,27 @@
       display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; font-size: 13px;
     }
     .footer-links a { color: var(--text-muted); text-decoration: none; cursor: pointer; }
-    .footer-links a:hover { color: var(--rose-gold); }
+    .footer-links a:hover { color: var(--gold-bright); }
     .footer-copy { font-size: 12px; color: var(--text-muted); }
 
     /* Modals */
     .modal-overlay {
-      position: fixed; inset: 0; background: rgba(0,0,0,0.8);
+      position: fixed; inset: 0; background: rgba(0,0,0,0.85);
       backdrop-filter: blur(6px); display: none; align-items: center; justify-content: center;
       z-index: 1000; padding: 20px;
     }
     .modal-overlay.active { display: flex; }
     .modal-box {
-      background: var(--bg-surface); border: 1px solid var(--rose-gold);
+      background: var(--bg-surface); border: 1px solid var(--gold-primary);
       border-radius: var(--radius-lg); width: 100%; max-width: 620px; max-height: 85vh;
       overflow-y: auto; padding: 28px; position: relative; color: var(--text-main);
     }
     .modal-close {
       position: absolute; top: 16px; right: 16px; background: transparent;
-      border: none; color: var(--rose-gold); font-size: 18px; cursor: pointer;
+      border: none; color: var(--gold-bright); font-size: 18px; cursor: pointer;
     }
     .modal-box h3 {
-      font-family: 'Cinzel', serif; color: var(--rose-gold); font-size: 20px;
+      font-family: 'Cinzel', serif; color: var(--gold-bright); font-size: 20px;
       margin-bottom: 14px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;
     }
     .modal-box p { font-size: 14px; color: var(--text-muted); margin-bottom: 12px; line-height: 1.7; }
@@ -275,31 +355,17 @@
       border-radius: var(--radius-sm); padding: 10px 14px; color: var(--text-main);
       margin-bottom: 12px; outline: none;
     }
-    .contact-input:focus { border-color: var(--rose-gold); }
+    .contact-input:focus { border-color: var(--gold-primary); }
     .btn-submit {
-      background: var(--rose-gold); color: #000; font-weight: 700;
+      background: var(--gold-primary); color: #000; font-weight: 700;
       padding: 10px 20px; border-radius: var(--radius-sm); border: none; cursor: pointer;
     }
 
-    /* Cookie Banner */
-    .cookie-banner {
-      position: fixed; bottom: 20px; left: 20px; right: 20px; max-width: 600px;
-      margin: 0 auto; background: var(--bg-surface); border: 1px solid var(--rose-gold);
-      border-radius: var(--radius-md); padding: 16px 20px; display: flex;
-      align-items: center; justify-content: space-between; gap: 16px; z-index: 999;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-    }
-    .cookie-banner p { font-size: 13px; color: var(--text-muted); margin: 0; }
-    .cookie-btn {
-      background: var(--rose-gold); color: #000; font-weight: 700;
-      font-size: 12px; padding: 8px 16px; border-radius: 6px; border: none; cursor: pointer;
-      white-space: nowrap;
-    }
-
     @media (max-width: 768px) {
+      .controls-row { flex-direction: column; align-items: stretch; }
+      .search-wrap { width: 100%; max-width: 100%; }
       .names-grid { grid-template-columns: 1fr; }
-      .search-row { flex-direction: column; align-items: stretch; }
-      .search-input { max-width: 100%; }
+      .hero h1 { font-size: 26px; }
     }
   </style>
 </head>
@@ -310,13 +376,17 @@
   <header>
     <div class="navbar">
       <a href="/" class="brand">
-        <i class="fas fa-baby"></i>
+        <i class="fas fa-certificate"></i>
         <div>
-          Islamic Baby Names
+          Islamic Names
           <span>names.sakib.bond</span>
         </div>
       </a>
       <div class="nav-actions">
+        <div class="fav-count-badge" onclick="showFavoritesOnly()" title="View Saved Favorites">
+          <i class="fas fa-heart" style="color:#f43f5e;"></i>
+          <span id="favCount">0</span>
+        </div>
         <button class="theme-btn" onclick="toggleTheme()" title="Toggle Theme">
           <i class="fas fa-moon" id="themeIcon"></i>
         </button>
@@ -328,55 +398,71 @@
   <div class="halalspark-ad-container">
     <div class="halalspark-ad" data-ad-slot="header-banner" style="width:728px;max-width:96%;height:90px;">
       <span class="ad-badge">Halalspark Ad Network</span>
-      <div><i class="fas fa-heart" style="margin-right:6px;"></i> Blessed Aqiqah Services & Newborn Baby Gifts — names.sakib.bond</div>
+      <div><i class="fas fa-hands-praying" style="margin-right:6px;"></i> The Prophet ﷺ said: "Call yourselves by the names of the Prophets and the most beloved names to Allah: Abdullah and Abdur-Rahman." — names.sakib.bond</div>
     </div>
   </div>
 
   <!-- Hero -->
   <section class="hero">
-    <h1>Blessed Names for Your Precious Child</h1>
-    <p>"On the Day of Resurrection, you will be called by your names and by your fathers' names, so give yourselves good names." — Sunan Abi Dawud 4948</p>
-    
-    <div class="notd-box">
-      <div class="notd-left">
-        <div class="notd-label"><i class="fas fa-sparkles"></i> Featured Name of the Day</div>
-        <div class="notd-title" id="notdTitle">Zayn (زين)</div>
-        <div style="font-size:13px;color:var(--text-muted);" id="notdMeaning">Beauty, grace, excellence, ornament.</div>
-      </div>
-      <div class="notd-ar" id="notdAr">زَيْن</div>
-    </div>
+    <div class="hero-arabic">وَلِلَّهِ الْأَسْمَاءُ الْحُسْنَىٰ فَادْعُوهُ بِهَا</div>
+    <h1>The Most Beautiful Names of Allah & Muslim Baby Names</h1>
+    <p>"And to Allah belong the most beautiful names, so invoke Him by them." — Surah Al-A'raf 7:180. Explore all 99 Names of Allah with Arabic, English & Bengali meanings and audio pronunciation, plus noble Muslim baby names.</p>
   </section>
 
-  <!-- Controls -->
-  <section class="controls-wrap">
-    <div class="search-row">
-      <input type="text" class="search-input" id="nameSearch" placeholder="Search by name, meaning, or letter..." onkeyup="filterNames()">
-      <div class="filter-tabs">
-        <button class="tab-btn active" onclick="setGenderFilter('all', this)">All (60+)</button>
-        <button class="tab-btn" onclick="setGenderFilter('Boy', this)"><i class="fas fa-mars"></i> Boys</button>
-        <button class="tab-btn" onclick="setGenderFilter('Girl', this)"><i class="fas fa-venus"></i> Girls</button>
-        <button class="tab-btn" onclick="setCategoryFilter('Quranic', this)">Quranic</button>
-        <button class="tab-btn" onclick="setCategoryFilter('Prophets', this)">Prophets</button>
+  <!-- Primary Tab Switcher -->
+  <div class="view-switcher-bar">
+    <div class="switch-tabs">
+      <button class="switch-tab active" id="tabAllah" onclick="switchMainView('allah')">
+        <i class="fas fa-star-and-crescent"></i> 99 Names of Allah (আসমাউল হুসনা)
+      </button>
+      <button class="switch-tab" id="tabBabies" onclick="switchMainView('babies')">
+        <i class="fas fa-child"></i> Baby Names (শিশুদের নাম)
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Content Container -->
+  <main class="main-section">
+    <!-- Controls Bar -->
+    <div class="controls-row">
+      <div class="search-wrap">
+        <i class="fas fa-search"></i>
+        <input type="text" id="nameSearch" placeholder="Search by English, Arabic, Bengali, or meaning..." oninput="filterData()">
+      </div>
+
+      <!-- Filters for Allah View -->
+      <div class="filter-pills" id="allahFilters">
+        <button class="filter-btn active" onclick="filterAllahCategory('all', this)">All 99 Names</button>
+        <button class="filter-btn" onclick="filterAllahCategory('mercy', this)">Mercy & Forgiveness</button>
+        <button class="filter-btn" onclick="filterAllahCategory('power', this)">Power & Sovereignty</button>
+        <button class="filter-btn" onclick="filterAllahCategory('creation', this)">Creation & Wisdom</button>
+      </div>
+
+      <!-- Filters for Babies View -->
+      <div class="filter-pills" id="babyFilters" style="display:none;">
+        <button class="filter-btn active" onclick="filterBabyGender('all', this)">All Names</button>
+        <button class="filter-btn" onclick="filterBabyGender('Boy', this)"><i class="fas fa-mars"></i> Boys</button>
+        <button class="filter-btn" onclick="filterBabyGender('Girl', this)"><i class="fas fa-venus"></i> Girls</button>
+        <button class="filter-btn" onclick="filterBabyGender('Unisex', this)">Unisex</button>
       </div>
     </div>
 
-    <!-- Alphabet Bar -->
-    <div class="az-bar" id="azBar">
-      <button class="az-btn active" onclick="setLetterFilter('', this)">ALL</button>
-      <!-- Generated via JS -->
+    <!-- Alphabet Bar (Baby Names Only) -->
+    <div class="alpha-bar" id="alphaBar" style="display:none;">
+      <!-- Populated by JS -->
     </div>
-  </section>
 
-  <!-- Names Grid -->
-  <main class="names-grid" id="namesGrid">
-    <!-- Populated by JavaScript -->
+    <!-- Cards Grid -->
+    <div class="names-grid" id="namesGrid">
+      <!-- Rendered dynamically -->
+    </div>
   </main>
 
   <!-- HALALSPARK AD: In-Content 336x280 -->
   <div class="halalspark-ad-container">
     <div class="halalspark-ad" data-ad-slot="in-content" style="width:336px;max-width:96%;height:220px;">
       <span class="ad-badge">Halalspark Ad Network</span>
-      <div><i class="fas fa-gift" style="font-size:24px;margin-bottom:8px;display:block;"></i> Islamic Parenting Books, Audiobooks & Educational Toys</div>
+      <div><i class="fas fa-heart" style="font-size:24px;margin-bottom:8px;display:block;"></i> Islamic Parenting & Nurturing Virtuous Muslim Children — names.sakib.bond</div>
     </div>
   </div>
 
@@ -384,7 +470,7 @@
   <div class="halalspark-ad-container">
     <div class="halalspark-ad" data-ad-slot="footer-banner" style="width:728px;max-width:96%;height:90px;">
       <span class="ad-badge">Halalspark Ad</span>
-      <div>Personalized Islamic Calligraphy Baby Name Frames — Handcrafted by Halal Artisans</div>
+      <div>Authentic Islamic Calligraphy Wall Art & Engraved Keepsakes — names.sakib.bond</div>
     </div>
   </div>
 
@@ -408,7 +494,8 @@
       <button class="modal-close" onclick="closeModal('privacyModal')"><i class="fas fa-times"></i></button>
       <h3>Privacy Policy</h3>
       <p>Welcome to <strong>names.sakib.bond</strong>. Your privacy and browsing comfort are paramount.</p>
-      <p><strong>Halalspark Advertising:</strong> We display ethical, family-friendly advertisements using Halalspark. We do not track or sell personal user records.</p>
+      <p><strong>Local Bookmarking:</strong> Your favorited names are preserved exclusively in your local web browser using HTML5 LocalStorage. No tracking or profiling occurs.</p>
+      <p><strong>Halalspark Advertising:</strong> We display ethical, family-friendly advertisements through Halalspark.</p>
       <p>Contact: admin@names.sakib.bond</p>
     </div>
   </div>
@@ -417,15 +504,15 @@
     <div class="modal-box">
       <button class="modal-close" onclick="closeModal('termsModal')"><i class="fas fa-times"></i></button>
       <h3>Terms of Service</h3>
-      <p>The names and meanings on <strong>names.sakib.bond</strong> are compiled from classical Arabic lexicography and Islamic tradition.</p>
+      <p>The names, meanings, and Quranic citations on <strong>names.sakib.bond</strong> are compiled from classical Arabic lexicography and recognized Islamic scholarship.</p>
     </div>
   </div>
 
   <div class="modal-overlay" id="aboutModal">
     <div class="modal-box">
       <button class="modal-close" onclick="closeModal('aboutModal')"><i class="fas fa-times"></i></button>
-      <h3>About Islamic Baby Names</h3>
-      <p>Selecting a beautiful, auspicious name for a child is an honorable prophetic duty. We provide verified Arabic spellings and rich contextual meanings to guide parents.</p>
+      <h3>About Islamic Names Platform</h3>
+      <p>Our mission is to celebrate the divine names of Allah (Asma-ul-Husna) and guide Muslim parents worldwide in selecting meaningful, auspicious names for their children in harmony with the Sunnah.</p>
     </div>
   </div>
 
@@ -446,134 +533,331 @@
   <div class="modal-overlay" id="disclaimerModal">
     <div class="modal-box">
       <button class="modal-close" onclick="closeModal('disclaimerModal')"><i class="fas fa-times"></i></button>
-      <h3>Islamic Naming Etiquette</h3>
-      <p>It is recommended (Mustahabb) in Islam to give names denoting servitude to Allah (e.g. Abdullah, Abdur Rahman), names of the Prophets, and names with noble, uplifting virtues.</p>
+      <h3>Islamic Naming Etiquette & Guidance</h3>
+      <p>The Prophet Muhammad ﷺ taught: <em>"On the Day of Resurrection, you will be called by your names and the names of your fathers, so have good names."</em> (Sunan Abi Dawud).</p>
+      <p>Recommended names include names of servitude to Allah (Abdullah, Abdur-Rahman), names of the Prophets, and names carrying righteous, uplifting virtues.</p>
     </div>
-  </div>
-
-  <!-- Cookie Banner -->
-  <div class="cookie-banner" id="cookieBanner">
-    <p><i class="fas fa-cookie-bite" style="color:var(--rose-gold);margin-right:6px;"></i> We use cookies to remember your favorite names and support ethical Halalspark advertisements.</p>
-    <button class="cookie-btn" onclick="acceptCookies()">Accept & Continue</button>
   </div>
 
   <!-- JavaScript -->
   <script>
-    const names = [
-      { id: 1, name: "Muhammad", ar: "مُحَمَّد", gender: "Boy", meaning: "Praiseworthy, commended; the name of the final Messenger of Allah ﷺ.", category: "Prophets", origin: "Arabic" },
-      { id: 2, name: "Aisha", ar: "عَائِشَة", gender: "Girl", meaning: "Living, prosperous, full of vitality; Mother of the Believers (RA).", category: "Sahabah", origin: "Arabic" },
-      { id: 3, name: "Ibrahim", ar: "إِبْرَاهِيم", gender: "Boy", meaning: "Father of nations; the intimate friend of Allah (Khalilullah AS).", category: "Prophets", origin: "Arabic/Hebrew" },
-      { id: 4, name: "Maryam", ar: "مَرْيَم", gender: "Girl", meaning: "Pious, devoted to Allah; mother of Prophet Isa (AS) and title of Surah 19.", category: "Quranic", origin: "Hebrew/Arabic" },
-      { id: 5, name: "Yusuf", ar: "يُوسُف", gender: "Boy", meaning: "Allah increases; Prophet known for unmatched beauty and patience.", category: "Prophets", origin: "Arabic" },
-      { id: 6, name: "Fatimah", ar: "فَاطِمَة", gender: "Girl", meaning: "One who abstains; beloved daughter of the Prophet Muhammad ﷺ.", category: "Sahabah", origin: "Arabic" },
-      { id: 7, name: "Ali", ar: "عَلِيّ", gender: "Boy", meaning: "Exalted, noble, high in status; 4th Righteous Caliph (RA).", category: "Sahabah", origin: "Arabic" },
-      { id: 8, name: "Khadijah", ar: "خَدِيجَة", gender: "Girl", meaning: "First and deeply cherished wife of the Prophet Muhammad ﷺ.", category: "Sahabah", origin: "Arabic" },
-      { id: 9, name: "Zayd", ar: "زَيْد", gender: "Boy", meaning: "Growth, abundance, progress; beloved companion mentioned in the Quran.", category: "Quranic", origin: "Arabic" },
-      { id: 10, name: "Noor", ar: "نُور", gender: "Unisex", meaning: "Divine light, illumination; one of the Names of Allah and Quran 24:35.", category: "Quranic", origin: "Arabic" },
-      { id: 11, name: "Omar (Umar)", ar: "عُمَر", gender: "Boy", meaning: "Flourishing, long-lived; 2nd Righteous Caliph known for absolute justice.", category: "Sahabah", origin: "Arabic" },
-      { id: 12, name: "Safiyyah", ar: "صَفِيَّة", gender: "Girl", meaning: "Pure, serene, sincere friend; wife of the Prophet ﷺ.", category: "Sahabah", origin: "Arabic" },
-      { id: 13, name: "Hamzah", ar: "حَمْزَة", gender: "Boy", meaning: "Lion, strong, steadfast; Lion of Allah and uncle of the Prophet ﷺ.", category: "Sahabah", origin: "Arabic" },
-      { id: 14, name: "Zaynab", ar: "زَيْنَب", gender: "Girl", meaning: "Fragrant blossoming tree, ornament; daughter of the Prophet ﷺ.", category: "Sahabah", origin: "Arabic" },
-      { id: 15, name: "Bilal", ar: "بِلَال", gender: "Boy", meaning: "Moisture, refreshing water; the beloved first Mu'adhin of Islam (RA).", category: "Sahabah", origin: "Arabic" },
-      { id: 16, name: "Hafsah", ar: "حَفْصَة", gender: "Girl", meaning: "Young lioness; keeper of the first compiled Quran manuscript (RA).", category: "Sahabah", origin: "Arabic" },
-      { id: 17, name: "Tariq", ar: "طَارِق", gender: "Boy", meaning: "The Morning Star, knocking at dawn; title of Surah 86.", category: "Quranic", origin: "Arabic" },
-      { id: 18, name: "Asiyah", ar: "آسِيَة", gender: "Girl", meaning: "One who heals and brings solace; noble wife of Pharaoh who believed.", category: "Quranic", origin: "Arabic" },
-      { id: 19, name: "Rayyan", ar: "رَيَّان", gender: "Boy", meaning: "Luxuriant, lush; the special gate of Paradise for those who fasted.", category: "Virtues", origin: "Arabic" },
-      { id: 20, name: "Layla", ar: "لَيْلَى", gender: "Girl", meaning: "Night, mystical beauty; dark night in classical Arabic poetry.", category: "Virtues", origin: "Arabic" },
-      { id: 21, name: "Idris", ar: "إِدْرِيس", gender: "Boy", meaning: "Scholar, studious interpreter; Prophet mentioned in Surah Maryam.", category: "Prophets", origin: "Arabic" },
-      { id: 22, name: "Amina", ar: "آمِنَة", gender: "Girl", meaning: "Trustworthy, peaceful, safe; mother of Prophet Muhammad ﷺ.", category: "Sahabah", origin: "Arabic" },
-      { id: 23, name: "Musa", ar: "مُوسَى", gender: "Boy", meaning: "Drawn from the water; the Prophet who spoke directly with Allah (Kalimullah).", category: "Prophets", origin: "Hebrew/Arabic" },
-      { id: 24, name: "Hajar", ar: "هَاجَر", gender: "Girl", meaning: "Mother of Ismail (AS), who ran between Safa and Marwah seeking water.", category: "Quranic", origin: "Arabic" }
+    // 99 Names of Allah Database with Arabic, Transliteration, English & Bengali Meanings
+    const allahNames = [
+      { id: 1, ar: "الرَّحْمَنُ", en: "Ar-Rahman", bn: "পরম দয়ালু / সর্বকরুণাময়", meaningEn: "The Exceedingly Merciful, whose mercy encompasses all creation.", category: "mercy", ref: "Quran 1:1" },
+      { id: 2, ar: "الرَّحِيمُ", en: "Ar-Raheem", bn: "পরম করুণাময় / অসীম দাতা", meaningEn: "The Bestower of Mercy, especially to believers in this life and the hereafter.", category: "mercy", ref: "Quran 1:1" },
+      { id: 3, ar: "المَلِكُ", en: "Al-Malik", bn: "সর্বভৌম অধিপতি / রাজাধিরাজ", meaningEn: "The Sovereign King and absolute Ruler of all existence.", category: "power", ref: "Quran 59:23" },
+      { id: 4, ar: "القُدُّوسُ", en: "Al-Quddus", bn: "মহা পবিত্র / নিষ্কলুষ", meaningEn: "The Most Holy, absolutely free from any imperfection, error, or defect.", category: "creation", ref: "Quran 59:23" },
+      { id: 5, ar: "السَّلَامُ", en: "As-Salam", bn: "শান্তিদাতা / নিরাপত্তাদাতা", meaningEn: "The Source of Peace, safety, and ultimate perfection.", category: "mercy", ref: "Quran 59:23" },
+      { id: 6, ar: "المُؤْمِنُ", en: "Al-Mu'min", bn: "ঈমান ও নিরাপত্তাদাতা", meaningEn: "The Inspirer of Faith and the Granter of security to His servants.", category: "mercy", ref: "Quran 59:23" },
+      { id: 7, ar: "المُهَيْمِنُ", en: "Al-Muhaymin", bn: "মহা রক্ষক ও তত্ত্বাবধায়ক", meaningEn: "The Guardian, Witness, and supreme Preserver over all things.", category: "power", ref: "Quran 59:23" },
+      { id: 8, ar: "العَزِيزُ", en: "Al-Aziz", bn: "মহা পরাক্রমশালী / অপরাজয়", meaningEn: "The All-Mighty, Invincible, who is never overcome.", category: "power", ref: "Quran 59:23" },
+      { id: 9, ar: "الجَبَّارُ", en: "Al-Jabbar", bn: "মহা প্রতাপশালী / সবলকারী", meaningEn: "The Compeller, who mends the broken and executes His divine will.", category: "power", ref: "Quran 59:23" },
+      { id: 10, ar: "المُتَكَبِّرُ", en: "Al-Mutakabbir", bn: "সর্বশ্রেষ্ঠ / গৌরবান্বিত", meaningEn: "The Supreme, Majestic, to whom alone all true greatness belongs.", category: "power", ref: "Quran 59:23" },
+      { id: 11, ar: "الخَالِقُ", en: "Al-Khaliq", bn: "মহা স্রষ্টা", meaningEn: "The Creator, who brings everything from non-existence into being.", category: "creation", ref: "Quran 59:24" },
+      { id: 12, ar: "البَارِئُ", en: "Al-Bari'", bn: "পরিকল্পক ও রূপদানকারী", meaningEn: "The Evolver, who crafts all creations in perfect proportion without prior model.", category: "creation", ref: "Quran 59:24" },
+      { id: 13, ar: "المُصَوِّرُ", en: "Al-Musawwir", bn: "সুন্দর আকৃতি দানকারী", meaningEn: "The Fashioner of forms, bestowing unique identities upon everything.", category: "creation", ref: "Quran 59:24" },
+      { id: 14, ar: "الغَفَّارُ", en: "Al-Ghaffar", bn: "মহা ক্ষমাশীল / দোষ গোপনকারী", meaningEn: "The Repeatedly Forgiving, who pardons sins repeatedly.", category: "mercy", ref: "Quran 71:10" },
+      { id: 15, ar: "القَهَّارُ", en: "Al-Qahhar", bn: "মহাপ্রতাপশালী দমনকারী", meaningEn: "The All-Dominant Subduer, who prevails over everything.", category: "power", ref: "Quran 13:16" },
+      { id: 16, ar: "الوَهَّابُ", en: "Al-Wahhab", bn: "মহাদাতা / অবারিত প্রদানকারী", meaningEn: "The Continuous Bestower of unconditional gifts and blessings.", category: "mercy", ref: "Quran 3:8" },
+      { id: 17, ar: "الرَّزَّاقُ", en: "Ar-Razzaq", bn: "রিজিকদাতা / অন্নদাতা", meaningEn: "The Provider of all spiritual, intellectual, and physical sustenance.", category: "mercy", ref: "Quran 51:58" },
+      { id: 18, ar: "الفَتَّاحُ", en: "Al-Fattah", bn: "বিজয়দানকারী ও দ্বার উন্মোচক", meaningEn: "The Opener of the gates of mercy, knowledge, and triumph.", category: "power", ref: "Quran 34:26" },
+      { id: 19, ar: "العَلِيمُ", en: "Al-Alim", bn: "সর্বজ্ঞ / অনন্ত জ্ঞানের অধিকারী", meaningEn: "The All-Knowing, whose knowledge encompasses everything unseen and seen.", category: "creation", ref: "Quran 2:158" },
+      { id: 20, ar: "القَابِضُ", en: "Al-Qabid", bn: "সংকোচনকারী / রিজিক সীমাবদ্ধকারী", meaningEn: "The Constrictor, who withholds or restricts according to divine wisdom.", category: "power", ref: "Quran 2:245" },
+      { id: 21, ar: "البَاسِطُ", en: "Al-Basit", bn: "সম্প্রসারণকারী / প্রাচুর্যদাতা", meaningEn: "The Expander, who extends bounty, life, and abundance.", category: "mercy", ref: "Quran 2:245" },
+      { id: 22, ar: "الخَافِضُ", en: "Al-Khafid", bn: "অবনমিতকারী / অহংকারীকে লাঞ্ছিতকারী", meaningEn: "The Abaser of arrogance and oppressors.", category: "power", ref: "Quran 56:3" },
+      { id: 23, ar: "الرَّافِعُ", en: "Ar-Rafi'", bn: "উন্নীতকারী / মর্যাদাদাতা", meaningEn: "The Exalter of the righteous, sincere, and humble.", category: "mercy", ref: "Quran 58:11" },
+      { id: 24, ar: "المُعِزُّ", en: "Al-Mu'izz", bn: "সম্মানদাতা / মর্যাদা প্রদানকারী", meaningEn: "The Giver of true honor, victory, and dignity.", category: "power", ref: "Quran 3:26" },
+      { id: 25, ar: "المُذِلُّ", en: "Al-Mudhill", bn: "অপমানকারী / লাঞ্ছনাদাতা", meaningEn: "The Giver of dishonor to persistent tyrants and rebels.", category: "power", ref: "Quran 3:26" },
+      { id: 26, ar: "السَّمِيعُ", en: "As-Sami'", bn: "সর্বশ্রোতা", meaningEn: "The All-Hearing, hearing every whisper and silent thought in the universe.", category: "creation", ref: "Quran 2:127" },
+      { id: 27, ar: "البَصِيرُ", en: "Al-Basir", bn: "সর্বদ্রষ্টা", meaningEn: "The All-Seeing, observing every motion in darkness and light.", category: "creation", ref: "Quran 42:11" },
+      { id: 28, ar: "الحَكَمُ", en: "Al-Hakam", bn: "মহা বিচারক", meaningEn: "The Supreme Judge and Arbiter, whose judgment is absolute justice.", category: "power", ref: "Quran 22:69" },
+      { id: 29, ar: "العَدْلُ", en: "Al-Adl", bn: "পরম ন্যায়পরায়ণ", meaningEn: "The Utterly Just, who never commits an atom of injustice.", category: "creation", ref: "Quran 6:115" },
+      { id: 30, ar: "اللَّطِيفُ", en: "Al-Latif", bn: "সূক্ষ্মদশী ও পরম স্নেহশীল", meaningEn: "The Subtle, Kind, who understands the deepest subtleties and grants delicate mercy.", category: "mercy", ref: "Quran 6:103" },
+      { id: 31, ar: "الخَبِيرُ", en: "Al-Khabir", bn: "সর্ববিষয়ে সম্যক অবগত", meaningEn: "The All-Aware of inner realities and hidden secrets.", category: "creation", ref: "Quran 6:18" },
+      { id: 32, ar: "الحَلِيمُ", en: "Al-Halim", bn: "মহা ধৈর্যশীল / পরম সহনশীল", meaningEn: "The Most Forbearing, who does not rush to punish sinners.", category: "mercy", ref: "Quran 2:225" },
+      { id: 33, ar: "العَظِيمُ", en: "Al-Azim", bn: "মহামহিম / অতীব মহিমান্বিত", meaningEn: "The Magnificent, whose glory exceeds all comprehension.", category: "power", ref: "Quran 2:255" },
+      { id: 34, ar: "الغَفُورُ", en: "Al-Ghafur", bn: "অসীম ক্ষমাশীল", meaningEn: "The All-Forgiving, completely obliterating repentance-seeking sins.", category: "mercy", ref: "Quran 2:173" },
+      { id: 35, ar: "الشَّكُورُ", en: "Ash-Shakur", bn: "কৃতজ্ঞ / গুণগ্রাহী পুরস্কারদাতা", meaningEn: "The Appreciative, bestowing immense reward for modest good deeds.", category: "mercy", ref: "Quran 35:30" },
+      { id: 36, ar: "العَلِيُّ", en: "Al-Ali", bn: "সর্বোচ্চ / মহান", meaningEn: "The Most High, transcendent above all creation.", category: "power", ref: "Quran 4:34" },
+      { id: 37, ar: "الكَبِيرُ", en: "Al-Kabir", bn: "মহা বড় / সর্বশ্রেষ্ঠ", meaningEn: "The All-Great, beyond any magnitude or measure.", category: "power", ref: "Quran 13:9" },
+      { id: 38, ar: "الحَفِيظُ", en: "Al-Hafiz", bn: "মহা সংরক্ষণকারী", meaningEn: "The Preserver, guarding the cosmos and every deed.", category: "power", ref: "Quran 11:57" },
+      { id: 39, ar: "المُقِيتُ", en: "Al-Muqit", bn: "জীবিকা ও শক্তিসাধক", meaningEn: "The Nourisher, providing food and strength to every entity.", category: "mercy", ref: "Quran 4:85" },
+      { id: 40, ar: "الحَسِيبُ", en: "Al-Hasib", bn: "হিসাব গ্রহণকারী ও যথেষ্ট", meaningEn: "The Reckoner and the Sufficient for all who rely upon Him.", category: "creation", ref: "Quran 4:6" },
+      { id: 41, ar: "الجَلِيلُ", en: "Al-Jalil", bn: "মহা মর্যাদাবান", meaningEn: "The Majestic, possessing supreme grandeur and splendor.", category: "power", ref: "Quran 55:27" },
+      { id: 42, ar: "الكَرِيمُ", en: "Al-Karim", bn: "মহা উদার ও সম্মানিত", meaningEn: "The Most Bountiful, Generous beyond estimation.", category: "mercy", ref: "Quran 27:40" },
+      { id: 43, ar: "الرَّقِيبُ", en: "Ar-Raqib", bn: "সদা জাগ্রত পরিদর্শক", meaningEn: "The Ever-Watchful Guardian, from whom nothing is concealed.", category: "creation", ref: "Quran 4:1" },
+      { id: 44, ar: "المُجِيبُ", en: "Al-Mujib", bn: "দোয়া কবুলকারী", meaningEn: "The Responsive to prayers, supplications, and calls of distress.", category: "mercy", ref: "Quran 11:61" },
+      { id: 45, ar: "الوَاسِعُ", en: "Al-Wasi'", bn: "সীমাহীন প্রাচুর্যময়", meaningEn: "The All-Encompassing, in capacity, knowledge, and mercy.", category: "creation", ref: "Quran 2:268" },
+      { id: 46, ar: "الحَكِيمُ", en: "Al-Hakim", bn: "পরম প্রজ্ঞাময়", meaningEn: "The All-Wise, placing every decree in its perfect station.", category: "creation", ref: "Quran 2:129" },
+      { id: 47, ar: "الوَدُودُ", en: "Al-Wadud", bn: "পরম প্রেমময় ও স্নেহশীল", meaningEn: "The Most Loving, tenderly caring towards His righteous servants.", category: "mercy", ref: "Quran 11:90" },
+      { id: 48, ar: "المَجِيدُ", en: "Al-Majid", bn: "মহিমান্বিত ও সম্মানিত", meaningEn: "The All-Glorious, possessing infinite nobility and praise.", category: "power", ref: "Quran 11:73" },
+      { id: 49, ar: "البَاعِثُ", en: "Al-Ba'ith", bn: "পুনরুত্থানকারী", meaningEn: "The Resurrector of the dead on the Day of Judgment.", category: "power", ref: "Quran 22:7" },
+      { id: 50, ar: "الشَّهِيدُ", en: "Ash-Shahid", bn: "প্রত্যক্ষদর্শী সাক্ষী", meaningEn: "The Universal Witness to all events and thoughts.", category: "creation", ref: "Quran 4:79" },
+      { id: 51, ar: "الحَقُّ", en: "Al-Haqq", bn: "পরম সত্য", meaningEn: "The Ultimate Truth, immutable and eternal.", category: "creation", ref: "Quran 22:6" },
+      { id: 52, ar: "الوَكِيلُ", en: "Al-Wakil", bn: "উত্তম অভিভাবক ও ভরসাস্থল", meaningEn: "The Trustworthy Trustee and Disposer of Affairs.", category: "mercy", ref: "Quran 3:173" },
+      { id: 53, ar: "القَوِيُّ", en: "Al-Qawiyy", bn: "মহাশক্তিধর", meaningEn: "The Most Strong, infinite in power.", category: "power", ref: "Quran 22:40" },
+      { id: 54, ar: "المَتِينُ", en: "Al-Matin", bn: "সুদৃঢ় ও অক্ষয়", meaningEn: "The Firm, Steadfast, incapable of fatigue.", category: "power", ref: "Quran 51:58" },
+      { id: 55, ar: "الوَلِيُّ", en: "Al-Waliyy", bn: "পরম বন্ধু ও পৃষ্ঠপোষক", meaningEn: "The Protecting Friend and Helper of the faithful.", category: "mercy", ref: "Quran 4:45" },
+      { id: 56, ar: "الحَمِيدُ", en: "Al-Hamid", bn: "প্রশংসিত / প্রশংসার একমাত্র হকদার", meaningEn: "The All-Praiseworthy in every state.", category: "creation", ref: "Quran 14:1" },
+      { id: 57, ar: "المُحْصِي", en: "Al-Muhsi", bn: "গণনাকারী ও পুঙ্খানুপুঙ্খ হিসাবকারী", meaningEn: "The Accounter who registers every deed and grain.", category: "creation", ref: "Quran 72:28" },
+      { id: 58, ar: "المُبْدِئُ", en: "Al-Mubdi'", bn: "প্রথম সৃষ্টিকর্তা", meaningEn: "The Originator who created without prior precedent.", category: "creation", ref: "Quran 85:13" },
+      { id: 59, ar: "المُعِيدُ", en: "Al-Mu'id", bn: "পুনরায় জীবনদানকারী", meaningEn: "The Restorer who brings creation back after death.", category: "power", ref: "Quran 85:13" },
+      { id: 60, ar: "المُحْيِي", en: "Al-Muhyi", bn: "জীবনদাতা", meaningEn: "The Giver of Life to hearts and bodies.", category: "creation", ref: "Quran 30:50" },
+      { id: 61, ar: "المُمِيتُ", en: "Al-Mumit", bn: "মৃত্যুদানকারী", meaningEn: "The Creator of Death at the designated term.", category: "power", ref: "Quran 3:156" },
+      { id: 62, ar: "الحَيُّ", en: "Al-Hayy", bn: "চিরঞ্জীব", meaningEn: "The Ever-Living, who never dies or slumbers.", category: "creation", ref: "Quran 2:255" },
+      { id: 63, ar: "القَيُّومُ", en: "Al-Qayyum", bn: "চিরস্থায়ী ধারক ও পরিচালক", meaningEn: "The Self-Subsisting Sustainer of all existence.", category: "power", ref: "Quran 2:255" },
+      { id: 64, ar: "الوَاجِدُ", en: "Al-Wajid", bn: "প্রাপক ও স্বয়ংসম্পূর্ণ", meaningEn: "The Finder who lacks nothing.", category: "creation", ref: "Quran 38:44" },
+      { id: 65, ar: "المَاجِدُ", en: "Al-Majid", bn: "মহিমান্বিত ও অতীব উদার", meaningEn: "The Noble and Magnificent in generosity.", category: "power", ref: "Quran 11:73" },
+      { id: 66, ar: "الوَاحِدُ", en: "Al-Wahid", bn: "একক ও অদ্বিতীয়", meaningEn: "The Unique, Indivisible One.", category: "creation", ref: "Quran 2:163" },
+      { id: 67, ar: "الأَحَدُ", en: "Al-Ahad", bn: "একক ও নিঃসঙ্গ", meaningEn: "The Absolute Singular without equal.", category: "creation", ref: "Quran 112:1" },
+      { id: 68, ar: "الصَّمَدُ", en: "As-Samad", bn: "অমুখাপেক্ষী / সকলের আশ্রয়", meaningEn: "The Eternal Refuge, upon whom all depend.", category: "power", ref: "Quran 112:2" },
+      { id: 69, ar: "القَادِرُ", en: "Al-Qadir", bn: "সর্বশক্তিমান", meaningEn: "The All-Able to accomplish whatever He wills.", category: "power", ref: "Quran 6:65" },
+      { id: 70, ar: "المُقْتَدِرُ", en: "Al-Muqtadir", bn: "প্রভাবশালী পরাক্রমশালী", meaningEn: "The Omnipotent Determiner of all destiny.", category: "power", ref: "Quran 54:42" },
+      { id: 71, ar: "المُقَدِّمُ", en: "Al-Muqaddim", bn: "অগ্রসরকারী", meaningEn: "The Expediter who brings forward whatever He wills.", category: "power", ref: "Quran 16:61" },
+      { id: 72, ar: "المُؤَخِّرُ", en: "Al-Mu'akhkhir", bn: "বিলম্বকারী", meaningEn: "The Delayer who postpones with wisdom.", category: "power", ref: "Quran 71:4" },
+      { id: 73, ar: "الأَوَّلُ", en: "Al-Awwal", bn: "অনাদি / সর্বপ্রথম", meaningEn: "The First, before whom was nothing.", category: "creation", ref: "Quran 57:3" },
+      { id: 74, ar: "الآخِرُ", en: "Al-Akhir", bn: "অনন্ত / সর্বশেষ", meaningEn: "The Last, after whom nothing remains.", category: "creation", ref: "Quran 57:3" },
+      { id: 75, ar: "الظَّاهِرُ", en: "Az-Zahir", bn: "প্রকাশ্য ও সুস্পষ্ট", meaningEn: "The Manifest through His cosmic signs.", category: "creation", ref: "Quran 57:3" },
+      { id: 76, ar: "البَاطِنُ", en: "Al-Batin", bn: "অপ্রকাশ্য ও গুপ্তজ্ঞাত", meaningEn: "The Hidden from physical sight, knowing inner realities.", category: "creation", ref: "Quran 57:3" },
+      { id: 77, ar: "الوَالِي", en: "Al-Wali", bn: "একমাত্র শাসক ও অভিভাবক", meaningEn: "The Sole Master and Governor of creation.", category: "power", ref: "Quran 13:11" },
+      { id: 78, ar: "المُتَعَالِي", en: "Al-Muta'ali", bn: "সর্বোচ্চ উন্নত", meaningEn: "The Self-Exalted above all defects.", category: "power", ref: "Quran 13:9" },
+      { id: 79, ar: "البَرُّ", en: "Al-Barr", bn: "পরম কল্যাণময় ও সদাচারী", meaningEn: "The Source of all goodness and righteousness.", category: "mercy", ref: "Quran 52:28" },
+      { id: 80, ar: "التَّوَّابُ", en: "At-Tawwab", bn: "তওবা কবুলকারী", meaningEn: "The Ever-Relenting who welcomes repentance.", category: "mercy", ref: "Quran 2:37" },
+      { id: 81, ar: "المُنْتَقِمُ", en: "Al-Muntaqim", bn: "অন্যায় দমনকারী ও প্রতিশোধগ্রহণকারী", meaningEn: "The Avenger of the oppressed against unrepentant tyrants.", category: "power", ref: "Quran 32:22" },
+      { id: 82, ar: "العَفُوُّ", en: "Al-Afuww", bn: "মার্জনাকারী / পাপ মোচনকারী", meaningEn: "The Pardoner who erases sins completely.", category: "mercy", ref: "Quran 4:99" },
+      { id: 83, ar: "الرَّؤُوفُ", en: "Ar-Ra'uf", bn: "পরম দয়াদ্র ও সহানুভূতিশীল", meaningEn: "The Most Compassionate and Tender.", category: "mercy", ref: "Quran 9:117" },
+      { id: 84, ar: "مَالِكُ المُلْكِ", en: "Malik-ul-Mulk", bn: "বিশ্বজগতের সার্বভৌম মালিক", meaningEn: "The Owner of All Sovereignty.", category: "power", ref: "Quran 3:26" },
+      { id: 85, ar: "ذُو الجَلَالِ وَالإِكْرَامِ", en: "Dhul-Jalali wal-Ikram", bn: "মহিমা ও সম্মানের অধিপতি", meaningEn: "The Lord of Majesty and Generosity.", category: "power", ref: "Quran 55:27" },
+      { id: 86, ar: "المُقْسِطُ", en: "Al-Muqsit", bn: "পরম ন্যায়নিষ্ঠ", meaningEn: "The Requiter of Equity and Fair Judgment.", category: "creation", ref: "Quran 3:18" },
+      { id: 87, ar: "الجَامِعُ", en: "Al-Jami'", bn: "একত্রকারী ও সমাবেশকারী", meaningEn: "The Gatherer of humanity on Judgment Day.", category: "power", ref: "Quran 3:9" },
+      { id: 88, ar: "الغَنِيُّ", en: "Al-Ghaniyy", bn: "স্বয়ংসম্পূর্ণ প্রাচুর্যময়", meaningEn: "The Rich, Free of all need.", category: "creation", ref: "Quran 2:263" },
+      { id: 89, ar: "المُغْنِي", en: "Al-Mughni", bn: "অভাবমুক্তকারী ও ধনীকারী", meaningEn: "The Enricher of whoever He pleases.", category: "mercy", ref: "Quran 9:28" },
+      { id: 90, ar: "المَانِعُ", en: "Al-Mani'", bn: "বাধা দানকারী ও প্রতিরোধক", meaningEn: "The Preventer of harm according to wisdom.", category: "power", ref: "Quran 67:21" },
+      { id: 91, ar: "الضَّارُّ", en: "Ad-Darr", bn: "ক্ষতিসাধক (পরীক্ষাস্বরূপ)", meaningEn: "The Creator of hardship to test faith.", category: "power", ref: "Quran 6:17" },
+      { id: 92, ar: "النَّافِعُ", en: "An-Nafi'", bn: "কল্যাণদাতা ও উপকারকারী", meaningEn: "The Bestower of benefit and welfare.", category: "mercy", ref: "Quran 30:37" },
+      { id: 93, ar: "النُّورُ", en: "An-Nur", bn: "জ্যোতির্ময় / আলোর উৎস", meaningEn: "The Divine Light illuminating the cosmos.", category: "creation", ref: "Quran 24:35" },
+      { id: 94, ar: "الهَادِي", en: "Al-Hadi", bn: "সঠিক পথের দিশারী", meaningEn: "The Guide to truth and rectitude.", category: "mercy", ref: "Quran 22:54" },
+      { id: 95, ar: "البَدِيعُ", en: "Al-Badi'", bn: "অপূর্ব অতুলনীয় উদ্ভাবক", meaningEn: "The Incomparable Originator.", category: "creation", ref: "Quran 2:117" },
+      { id: 96, ar: "البَاقِي", en: "Al-Baqi", bn: "চিরস্থায়ী ও অবিনশ্বর", meaningEn: "The Everlasting, whose existence never ends.", category: "creation", ref: "Quran 55:27" },
+      { id: 97, ar: "الوَارِثُ", en: "Al-Warith", bn: "চূড়ান্ত উত্তরাধিকারী", meaningEn: "The Supreme Inheritor of all creation.", category: "power", ref: "Quran 15:23" },
+      { id: 98, ar: "الرَّشِيدُ", en: "Ar-Rashid", bn: "সুদক্ষ সুপথপ্রদর্শক", meaningEn: "The Righteous Guide in divine management.", category: "creation", ref: "Quran 11:87" },
+      { id: 99, ar: "الصَّبُورُ", en: "As-Sabur", bn: "অসীম ধৈর্যশীল", meaningEn: "The Most Patient, who hastens not to retribution.", category: "mercy", ref: "Quran 2:153" }
     ];
 
-    let currentGender = 'all';
-    let currentCategory = 'all';
-    let currentLetter = '';
-    let favorites = JSON.parse(localStorage.getItem('saved_names') || '[]');
+    // Curated Islamic Baby Names Database
+    const babyNames = [
+      { id: 101, name: "Muhammad", ar: "مُحَمَّد", gender: "Boy", bn: "প্রশংসিত, সর্বগুণান্বিত", meaning: "Praiseworthy; the blessed name of the final Messenger of Allah ﷺ.", category: "Prophets", origin: "Arabic" },
+      { id: 102, name: "Aisha", ar: "عَائِشَة", gender: "Girl", bn: "প্রাণবন্ত, সুখী ও সৌভাগ্যবতী", meaning: "Living, prosperous, full of vitality; Mother of the Believers (RA).", category: "Sahabah", origin: "Arabic" },
+      { id: 103, name: "Ibrahim", ar: "إِبْرَاهِيم", gender: "Boy", bn: "জাতিসমূহের পিতা", meaning: "Father of nations; Khalilullah (Friend of Allah AS).", category: "Prophets", origin: "Arabic/Hebrew" },
+      { id: 104, name: "Maryam", ar: "مَرْيَم", gender: "Girl", bn: "পবিত্রা, একান্ত ভক্তিমতী", meaning: "Pious, devout servant; mother of Prophet Isa (AS).", category: "Quranic", origin: "Hebrew/Arabic" },
+      { id: 105, name: "Yusuf", ar: "يُوسُف", gender: "Boy", bn: "আল্লাহ বৃদ্ধি করেন, অনুপম সুন্দর", meaning: "God increases; prophet known for unmatched beauty and patience.", category: "Prophets", origin: "Arabic" },
+      { id: 106, name: "Fatimah", ar: "فَاطِمَة", gender: "Girl", bn: "নিষ্পাপ, অন্যায় থেকে বিরত", meaning: "One who abstains; cherished daughter of Prophet Muhammad ﷺ.", category: "Sahabah", origin: "Arabic" },
+      { id: 107, name: "Ali", ar: "عَلِيّ", gender: "Boy", bn: "উচ্চ মর্যাদাশীল, মহিমান্বিত", meaning: "Exalted, noble; 4th Righteous Caliph and cousin of the Prophet ﷺ.", category: "Sahabah", origin: "Arabic" },
+      { id: 108, name: "Khadijah", ar: "خَدِيجَة", gender: "Girl", bn: "বিশ্বস্ত ও মহীয়সী প্রথম বিশ্বাসী", meaning: "First and deeply cherished wife of the Prophet Muhammad ﷺ.", category: "Sahabah", origin: "Arabic" },
+      { id: 109, name: "Zayd", ar: "زَيْد", gender: "Boy", bn: "বৃদ্ধি, প্রাচুর্য ও উন্নতি", meaning: "Growth, abundance; beloved companion named in Quran 33:37.", category: "Quranic", origin: "Arabic" },
+      { id: 110, name: "Noor", ar: "نُور", gender: "Unisex", bn: "ঐশ্বরিক আলো, উজ্জ্বলতা", meaning: "Divine light; illumination from the Quran and Asma-ul-Husna.", category: "Quranic", origin: "Arabic" },
+      { id: 111, name: "Omar (Umar)", ar: "عُمَر", gender: "Boy", bn: "দীর্ঘায়ু, ন্যায়পরায়ণ দূরদর্শী", meaning: "Flourishing, long-lived; 2nd Righteous Caliph renowned for justice.", category: "Sahabah", origin: "Arabic" },
+      { id: 112, name: "Safiyyah", ar: "صَفِيَّة", gender: "Girl", bn: "পবিত্র, নির্মল ও আন্তরিক বান্ধবী", meaning: "Pure, serene friend; noble wife of the Prophet ﷺ.", category: "Sahabah", origin: "Arabic" },
+      { id: 113, name: "Hamzah", ar: "حَمْزَة", gender: "Boy", bn: "বীর সিংহ, অদম্য সাহসী", meaning: "Lion, strong, steadfast; Lion of Allah and uncle of the Prophet ﷺ.", category: "Sahabah", origin: "Arabic" },
+      { id: 114, name: "Zaynab", ar: "زَيْنَب", gender: "Girl", bn: "সুগন্ধি প্রস্ফুটিত বৃক্ষ, অলংকার", meaning: "Fragrant blossoming tree, ornament; daughter of the Prophet ﷺ.", category: "Sahabah", origin: "Arabic" },
+      { id: 115, name: "Bilal", ar: "بِلَال", gender: "Boy", bn: "সজীব বারিধারা, অমৃত", meaning: "Moisture, refreshing water; the revered first Mu'adhin of Islam (RA).", category: "Sahabah", origin: "Arabic" },
+      { id: 116, name: "Hafsah", ar: "حَفْصَة", gender: "Girl", bn: "সিংহশাবক, দৃঢ় সংকল্পের অধিকারিণী", meaning: "Young lioness; keeper of the first compiled Quran manuscript.", category: "Sahabah", origin: "Arabic" },
+      { id: 117, name: "Tariq", ar: "طَارِق", gender: "Boy", bn: "উজ্জ্বল প্রভাততারা, বিজয়ী পথিক", meaning: "The Morning Star; title of Surah 86.", category: "Quranic", origin: "Arabic" },
+      { id: 118, name: "Asiyah", ar: "آسِيَة", gender: "Girl", bn: "সেবিকা, সান্ত্বনাদানকারী", meaning: "One who heals; noble righteous queen who sheltered infant Musa (AS).", category: "Quranic", origin: "Arabic" },
+      { id: 119, name: "Rayyan", ar: "رَيَّان", gender: "Boy", bn: "সুজলা, জান্নাতের বিশেষ দরজা", meaning: "Lush, fruitful; the sacred gate of Paradise reserved for those who fast.", category: "Virtues", origin: "Arabic" },
+      { id: 120, name: "Layla", ar: "لَيْلَى", gender: "Girl", bn: "মায়াবী সুন্দর রাত", meaning: "Night, mystical beauty; peaceful tranquility.", category: "Virtues", origin: "Arabic" },
+      { id: 121, name: "Idris", ar: "إِدْرِيس", gender: "Boy", bn: "জ্ঞানী, অধ্যবসায়ী সাধক", meaning: "Scholar, devoted interpreter; Prophet mentioned in Surah Maryam.", category: "Prophets", origin: "Arabic" },
+      { id: 122, name: "Amina", ar: "آمِنَة", gender: "Girl", bn: "বিশ্বস্ত, নির্ভয় ও শান্তিময়ী", meaning: "Trustworthy, peaceful; mother of Prophet Muhammad ﷺ.", category: "Sahabah", origin: "Arabic" },
+      { id: 123, name: "Musa", ar: "مُوسَى", gender: "Boy", bn: "জল থেকে রক্ষিত, আল্লাহর বাণীপ্রাপক", meaning: "Drawn from water; Kalimullah who spoke with Allah.", category: "Prophets", origin: "Hebrew/Arabic" },
+      { id: 124, name: "Hajar", ar: "هَاجَر", gender: "Girl", bn: "ত্যাগশীলা মাতা, হিজরতকারিণী", meaning: "Mother of Ismail (AS), who ran between Safa and Marwah seeking water.", category: "Quranic", origin: "Arabic" },
+      { id: 125, name: "Abdullah", ar: "عَبْدُ اللَّهِ", gender: "Boy", bn: "আল্লাহর প্রিয় বান্দা", meaning: "Servant of Allah; the most beloved name to Allah according to Hadith.", category: "Virtues", origin: "Arabic" },
+      { id: 126, name: "Abdur-Rahman", ar: "عَبْدُ الرَّحْمَٰنِ", gender: "Boy", bn: "পরম করুণাময়ের সেবক", meaning: "Servant of the Most Merciful; highly recommended prophetic name.", category: "Virtues", origin: "Arabic" },
+      { id: 127, name: "Sumayyah", ar: "سُمَيَّة", gender: "Girl", bn: "উচ্চ মর্যাদাপূর্ণ প্রথম শহীদ", meaning: "Exalted; the first martyr of Islam in Makkah (RA).", category: "Sahabah", origin: "Arabic" },
+      { id: 128, name: "Anas", ar: "أَنَس", gender: "Boy", bn: "আনন্দময় সহচর, বন্ধুসুলভ", meaning: "Affectionate friend; Anas ibn Malik, dedicated companion of the Prophet ﷺ.", category: "Sahabah", origin: "Arabic" },
+      { id: 129, name: "Tasnim", ar: "تَسْنِيم", gender: "Girl", bn: "জান্নাতের সুস্বাদু ঝর্ণাধারা", meaning: "A fountain in the highest chambers of Paradise (Quran 83:27).", category: "Quranic", origin: "Arabic" },
+      { id: 130, name: "Junaid", ar: "جُنَيْد", gender: "Boy", bn: "ক্ষুদ্র সেনাবাহিনী, আধ্যাত্মিক সৈনিক", meaning: "Soldier, spiritual striver; Junaid al-Baghdadi.", category: "Virtues", origin: "Arabic" }
+    ];
 
-    function renderNames(list = names) {
+    let currentMainView = 'allah'; // 'allah' or 'babies'
+    let currentAllahCat = 'all';
+    let currentBabyGender = 'all';
+    let currentBabyLetter = '';
+    let showFavsOnly = false;
+
+    let savedFavorites = JSON.parse(localStorage.getItem('saved_islamic_names') || '[]');
+
+    function saveFavs() {
+      localStorage.setItem('saved_islamic_names', JSON.stringify(savedFavorites));
+      document.getElementById('favCount').innerText = savedFavorites.length;
+    }
+
+    function switchMainView(view) {
+      currentMainView = view;
+      showFavsOnly = false;
+      document.getElementById('tabAllah').classList.toggle('active', view === 'allah');
+      document.getElementById('tabBabies').classList.toggle('active', view === 'babies');
+
+      document.getElementById('allahFilters').style.display = view === 'allah' ? 'flex' : 'none';
+      document.getElementById('babyFilters').style.display = view === 'babies' ? 'flex' : 'none';
+      document.getElementById('alphaBar').style.display = view === 'babies' ? 'flex' : 'none';
+
+      filterData();
+    }
+
+    function renderAlphabetBar() {
+      const container = document.getElementById('alphaBar');
+      const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+      container.innerHTML = `
+        <button class="alpha-btn ${currentBabyLetter === '' ? 'active' : ''}" onclick="setBabyLetter('', this)">All</button>
+        ${letters.map(l => `<button class="alpha-btn ${currentBabyLetter === l ? 'active' : ''}" onclick="setBabyLetter('${l}', this)">${l}</button>`).join('')}
+      `;
+    }
+
+    function setBabyLetter(l, btn) {
+      currentBabyLetter = l;
+      document.querySelectorAll('.alpha-btn').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+      filterData();
+    }
+
+    function filterAllahCategory(cat, btn) {
+      currentAllahCat = cat;
+      document.querySelectorAll('#allahFilters .filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      filterData();
+    }
+
+    function filterBabyGender(g, btn) {
+      currentBabyGender = g;
+      document.querySelectorAll('#babyFilters .filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      filterData();
+    }
+
+    function showFavoritesOnly() {
+      showFavsOnly = !showFavsOnly;
+      filterData();
+    }
+
+    function filterData() {
+      const q = document.getElementById('nameSearch').value.toLowerCase().trim();
+
+      if (currentMainView === 'allah') {
+        let filtered = allahNames.filter(item => {
+          const matchQ = !q || item.en.toLowerCase().includes(q) || item.bn.includes(q) || item.ar.includes(q) || item.meaningEn.toLowerCase().includes(q) || item.id.toString() === q;
+          const matchCat = currentAllahCat === 'all' || item.category === currentAllahCat;
+          const matchFav = !showFavsOnly || savedFavorites.includes(`allah_${item.id}`);
+          return matchQ && matchCat && matchFav;
+        });
+        renderAllahGrid(filtered);
+      } else {
+        let filtered = babyNames.filter(item => {
+          const matchQ = !q || item.name.toLowerCase().includes(q) || item.bn.includes(q) || item.ar.includes(q) || item.meaning.toLowerCase().includes(q);
+          const matchG = currentBabyGender === 'all' || item.gender === currentBabyGender;
+          const matchL = !currentBabyLetter || item.name.toUpperCase().startsWith(currentBabyLetter);
+          const matchFav = !showFavsOnly || savedFavorites.includes(`baby_${item.id}`);
+          return matchQ && matchG && matchL && matchFav;
+        });
+        renderBabyGrid(filtered);
+      }
+    }
+
+    function renderAllahGrid(list) {
       const container = document.getElementById('namesGrid');
-      container.innerHTML = list.map(n => {
-        const isFav = favorites.includes(n.id);
-        const badgeClass = n.gender === 'Boy' ? 'badge-boy' : n.gender === 'Girl' ? 'badge-girl' : 'badge-unisex';
+      if (list.length === 0) {
+        container.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text-muted);">No names found matching your criteria.</div>`;
+        return;
+      }
+
+      container.innerHTML = list.map(item => {
+        const isFav = savedFavorites.includes(`allah_${item.id}`);
         return `
-          <div class="name-card">
+          <div class="allah-card">
             <div>
-              <div class="name-card-top">
-                <span class="name-badge ${badgeClass}">${n.gender}</span>
-                <button class="fav-btn ${isFav ? 'favorited' : ''}" onclick="toggleFav(${n.id})">
-                  <i class="${isFav ? 'fas' : 'far'} fa-heart"></i>
-                </button>
+              <div class="card-top">
+                <span class="name-number">#${item.id}</span>
+                <div class="card-actions">
+                  <button class="audio-btn" onclick="speakArabic('${item.ar}')" title="Pronounce Arabic">
+                    <i class="fas fa-volume-high"></i>
+                  </button>
+                  <button class="fav-btn ${isFav ? 'favorited' : ''}" onclick="toggleFav('allah_${item.id}')" title="Save to Favorites">
+                    <i class="${isFav ? 'fas' : 'far'} fa-heart"></i>
+                  </button>
+                </div>
               </div>
-              <div class="name-arabic">${n.ar}</div>
-              <div class="name-heading">${n.name}</div>
-              <div class="name-meaning">${n.meaning}</div>
+              <div class="allah-arabic">${item.ar}</div>
+              <div class="allah-translit">${item.en}</div>
+              <div class="allah-bengali">${item.bn}</div>
+              <div class="allah-meaning-en">${item.meaningEn}</div>
             </div>
-            <div class="name-meta-row">
-              <span><i class="fas fa-tag" style="margin-right:4px;"></i>${n.category}</span>
-              <span><i class="fas fa-globe" style="margin-right:4px;"></i>${n.origin}</span>
+            <div class="allah-meta">
+              <span><i class="fas fa-book-quran" style="margin-right:4px;"></i>${item.ref}</span>
+              <span style="text-transform:capitalize;color:var(--gold-primary);"><i class="fas fa-tag" style="margin-right:4px;"></i>${item.category}</span>
             </div>
           </div>
         `;
       }).join('');
     }
 
-    function filterNames() {
-      const q = document.getElementById('nameSearch').value.toLowerCase().trim();
-      const filtered = names.filter(n => {
-        const matchesQ = !q || n.name.toLowerCase().includes(q) || n.meaning.toLowerCase().includes(q) || n.ar.includes(q);
-        const matchesG = currentGender === 'all' || n.gender === currentGender;
-        const matchesC = currentCategory === 'all' || n.category === currentCategory;
-        const matchesL = !currentLetter || n.name.toUpperCase().startsWith(currentLetter);
-        return matchesQ && matchesG && matchesC && matchesL;
-      });
-      renderNames(filtered);
-    }
-
-    function setGenderFilter(g, btn) {
-      currentGender = g;
-      currentCategory = 'all';
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      filterNames();
-    }
-
-    function setCategoryFilter(c, btn) {
-      currentCategory = c;
-      currentGender = 'all';
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      filterNames();
-    }
-
-    function setLetterFilter(l, btn) {
-      currentLetter = l;
-      document.querySelectorAll('.az-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      filterNames();
-    }
-
-    function toggleFav(id) {
-      const idx = favorites.indexOf(id);
-      if (idx === -1) {
-        favorites.push(id);
-      } else {
-        favorites.splice(idx, 1);
+    function renderBabyGrid(list) {
+      const container = document.getElementById('namesGrid');
+      if (list.length === 0) {
+        container.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text-muted);">No names found matching your criteria.</div>`;
+        return;
       }
-      localStorage.setItem('saved_names', JSON.stringify(favorites));
-      filterNames();
+
+      container.innerHTML = list.map(item => {
+        const isFav = savedFavorites.includes(`baby_${item.id}`);
+        const badgeClass = item.gender === 'Boy' ? 'badge-boy' : item.gender === 'Girl' ? 'badge-girl' : 'badge-unisex';
+        return `
+          <div class="baby-card">
+            <div>
+              <div class="card-top">
+                <span class="gender-badge ${badgeClass}">${item.gender}</span>
+                <div class="card-actions">
+                  <button class="audio-btn" onclick="speakArabic('${item.ar}')" title="Pronounce Arabic">
+                    <i class="fas fa-volume-high"></i>
+                  </button>
+                  <button class="fav-btn ${isFav ? 'favorited' : ''}" onclick="toggleFav('baby_${item.id}')" title="Save to Favorites">
+                    <i class="${isFav ? 'fas' : 'far'} fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="baby-arabic">${item.ar}</div>
+              <div class="baby-name">${item.name}</div>
+              <div class="baby-bengali">${item.bn}</div>
+              <div class="baby-meaning">${item.meaning}</div>
+            </div>
+            <div class="baby-meta">
+              <span><i class="fas fa-tag" style="margin-right:4px;"></i>${item.category}</span>
+              <span><i class="fas fa-globe" style="margin-right:4px;"></i>${item.origin}</span>
+            </div>
+          </div>
+        `;
+      }).join('');
     }
 
-    function setupAlphabet() {
-      const azBar = document.getElementById('azBar');
-      const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-      alphabet.forEach(letter => {
-        const btn = document.createElement('button');
-        btn.className = 'az-btn';
-        btn.innerText = letter;
-        btn.onclick = () => setLetterFilter(letter, btn);
-        azBar.appendChild(btn);
-      });
+    function toggleFav(idStr) {
+      if (savedFavorites.includes(idStr)) {
+        savedFavorites = savedFavorites.filter(id => id !== idStr);
+      } else {
+        savedFavorites.push(idStr);
+      }
+      saveFavs();
+      filterData();
+    }
+
+    // Speech synthesis for Arabic pronunciation
+    function speakArabic(text) {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const utter = new SpeechSynthesisUtterance(text);
+        utter.lang = 'ar-SA';
+        utter.rate = 0.85;
+        window.speechSynthesis.speak(utter);
+      } else {
+        alert('Web Speech API is not supported in this browser.');
+      }
     }
 
     function toggleTheme() {
@@ -587,22 +871,14 @@
     function openModal(id) { document.getElementById(id).classList.add('active'); }
     function closeModal(id) { document.getElementById(id).classList.remove('active'); }
 
-    function acceptCookies() {
-      localStorage.setItem('names_cookies_accepted', 'true');
-      document.getElementById('cookieBanner').style.display = 'none';
-    }
-
     window.addEventListener('DOMContentLoaded', () => {
       const savedTheme = localStorage.getItem('names_theme') || 'dark';
       document.documentElement.setAttribute('data-theme', savedTheme);
       document.getElementById('themeIcon').className = savedTheme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
 
-      if (localStorage.getItem('names_cookies_accepted') === 'true') {
-        document.getElementById('cookieBanner').style.display = 'none';
-      }
-
-      setupAlphabet();
-      renderNames();
+      document.getElementById('favCount').innerText = savedFavorites.length;
+      renderAlphabetBar();
+      filterData();
     });
   </script>
 </body>
