@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1b2a"/>
+      <stop offset="100%" stop-color="#080f1a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#e0a899"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#bg)"/>
+  <!-- Outer Decorative Ring -->
+  <circle cx="32" cy="32" r="28" fill="none" stroke="url(#gold)" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <!-- 8-point Islamic Star (Rub el Hizb) -->
+  <rect x="18" y="18" width="28" height="28" rx="3" fill="none" stroke="url(#gold)" stroke-width="2.5" transform="rotate(0 32 32)"/>
+  <rect x="18" y="18" width="28" height="28" rx="3" fill="none" stroke="url(#gold)" stroke-width="2.5" transform="rotate(45 32 32)"/>
+  <!-- Central Luminous Circle -->
+  <circle cx="32" cy="32" r="9" fill="url(#gold)"/>
+  <!-- Inner Diamond -->
+  <polygon points="32,26 38,32 32,38 26,32" fill="#0d1b2a"/>
+  <circle cx="32" cy="32" r="2" fill="url(#gold)"/>
+</svg>
